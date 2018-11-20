@@ -23,10 +23,9 @@ end
   end
 
   def sort
-      @roster.map do |grade_in_hash, students|
+      @roster.each do |grade_in_hash, students|
         students.sort!
       end
-      @roster
     end
 
   end
