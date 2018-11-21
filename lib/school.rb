@@ -9,16 +9,16 @@ class School
   end
 
   def add_student(student, grade)
-    @roster[grade] = [] if @roster[grade].nil?
-    @roster[grade] << student
+    self.roster[grade] = [] if self.roster[grade].nil?
+    self.roster[grade] << student
   end
 
   def grade(grade)
-    @roster[grade]
+    self.roster[grade]
   end
 
   def sort
-    @roster.each { |grade, students| students.sort! }
+    self.roster.each { |grade, students| v.sort! }
   end
 
 end
